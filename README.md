@@ -1,0 +1,1 @@
+This is a small application that I built to take the average color of an image with/without decoding it with a gamma value of 2.2. I started this project to familizarize myself with how colours are displayed on a computer. It needs work.

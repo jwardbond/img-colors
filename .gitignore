@@ -4,21 +4,12 @@
 # backup files
 *~
 
-# Windows
-# thumbnails
-Thumbs.db
-
-# Mac OS X
-# metadata
-.DS_Store
-# thumbnails
-._*
-
 # GIT
 .git/
 
 # Java
 *.class
+
 # packages 
 *.jar
 *.war

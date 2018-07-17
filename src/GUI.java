@@ -17,9 +17,11 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 
 public class GUI extends JFrame implements ActionListener{
 	
+	
 	private JPanel gammaDecodedPanel;
 	private JPanel linearPanel;
 	private ImagePanel centerPanel;
+	
 	
 	public GUI(String title) {
 		super();
@@ -50,12 +52,12 @@ public class GUI extends JFrame implements ActionListener{
 		
 		GUI userInterface = new GUI("Color Averager");
 		userInterface.setVisible(true);
+		
 	}
 
 
 	@Override
 	public void actionPerformed(ActionEvent event) {
-		
 		
 		//Display an image in the center panel
 		BufferedImage img = this.loadImage();
@@ -71,15 +73,17 @@ public class GUI extends JFrame implements ActionListener{
 		this.linearPanel.add(new JLabel("Average after\n gamma decoding"));
 			
 		repaint();
-		setVisible(true); //refreshes the windo I hope
+		setVisible(true); //refreshes the window I hope
 		
 	}	
+	
 	
 	/**
 	 * Prompts the user to load an image using a JFileChooser
 	 * @return a BufferedImage containing the file the user chose.
 	 */
 	public BufferedImage loadImage() {
+		
 		File currentDirectory = new File(System.getProperty("user.dir"));
 		FileNameExtensionFilter filter = new FileNameExtensionFilter("Image Files", "jpg", "jpeg", "png", "gif");
 		
